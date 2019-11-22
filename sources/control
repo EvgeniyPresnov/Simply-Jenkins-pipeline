@@ -1,0 +1,7 @@
+Package: libsome
+Version: 0.0.1-$BUILDNUMBER
+Section: libs
+Architecture: amd64
+Depends: python3
+Maintainer: Eugene
+Description: A very useful library

@@ -1,0 +1,22 @@
+pipleline {
+	agent any
+	stages
+	{
+		stage('Build a deb package') {
+			steps {
+				sh '''
+				cd build-folder
+				./version.sh $BUILD_NUMBER
+				'''
+			}
+		}
+		stage('Deploy the deb package on Sonatype Nexus') {
+			steps {
+				sh '''
+				cd build-folder
+				./upload.sh
+				'''
+			}
+		}
+	}
+}
