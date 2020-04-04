@@ -1,2 +1,2 @@
-# Описание
-Применяя основные знания по созданию deb пакета, воспользуемся системой непрерывной интеграции Jenkins для атоматической сборки и развертывания deb пакета
+# Project Title
+Using the Jenkins continuous integration system to automatically build and deploy a deb package
